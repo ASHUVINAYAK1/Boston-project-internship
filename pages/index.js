@@ -9,6 +9,7 @@ import Services from "@/src/components/Services";
 import Skill from "@/src/components/Skill";
 import Testimonial from "@/src/components/Testimonial";
 import ImageView from "@/src/components/popup/ImageView";
+import About from "@/src/components/About"; // Importing the About component
 import { boston } from "@/src/utils";
 
 const Index = () => {
@@ -40,12 +41,14 @@ const Index = () => {
   }
 
   const { timeline, skills, projects, testimonials, services, social_handles } = userData;
+  console.log(userData)
   return (
     <Fragment>
       <ImageView />
       <Header />
       <main className="wrapper">
         <Home />
+        <About userData={userData} />
         <Services servicesData={services} />
         <Skill skillsData={skills} experiencesData={timeline} />
         <Portfolio projectsData={projects} />

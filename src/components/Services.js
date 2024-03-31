@@ -14,8 +14,8 @@ const Services = ({ servicesData }) => {
                   <div className="number">
                     <span>0{index + 1}</span>
                   </div>
-                  <h5>{service.name}</h5>
-                  <p>{service.desc}</p>
+                  {/* <h5>{service.name}</h5>
+                  <p>{service.desc}</p> */}
 
                   {service.image && <img src={service.image.url} alt={service.name} />}
                   {service.icon && <div className="icon"><i className={service.icon} /></div>}

@@ -9,7 +9,7 @@ import Services from "@/src/components/Services";
 import Skill from "@/src/components/Skill";
 import Testimonial from "@/src/components/Testimonial";
 import ImageView from "@/src/components/popup/ImageView";
-import About from "@/src/components/About"; // Importing the About component
+import About from "@/src/components/About";
 import { boston } from "@/src/utils";
 
 const Index = () => {
